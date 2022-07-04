@@ -21,7 +21,7 @@ STORAGE_BUCKET_NAME = os.getenv("STORAGE_BUCKET_NAME")
 
 logging.info("Setting up cluster...")
 cluster = YarnCluster()
-cluster.scale(7)
+cluster.scale(6)
 client = Client(cluster)
 cluster.adapt() # Dynamically scale Dask resources
 

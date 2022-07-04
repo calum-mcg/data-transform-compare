@@ -85,9 +85,9 @@ gsutil cp spark/target/scala-2.12/${JAR_FILENAME}.jar gs://example-big-data-buck
     --project=${PROJECT_ID} \
     --region=${REGION} \
     --image-version=2.0 \
-    --master-machine-type n1-standard-4 \
-    --worker-machine-type n1-standard-16 \
-    --num-workers 7
+    --master-machine-type n1-standard-8 \
+    --worker-machine-type n1-standard-8 \
+    --num-workers 6
 ```
 
 5. Submit Spark job on Dataproc cluster
@@ -112,9 +112,9 @@ gsutil cp gs://goog-dataproc-initialization-actions-${ZONE}/dask/dask.sh gs://${
  gcloud dataproc clusters create ${DASK_CLUSTER_NAME} \
     --project=${PROJECT_ID} \
     --region=${REGION} \
-    --master-machine-type n1-standard-4 \
-    --worker-machine-type n1-standard-16 \
-    --num-workers 7 \
+    --master-machine-type n1-standard-8 \
+    --worker-machine-type n1-standard-8 \
+    --num-workers 6 \
     --image-version preview-ubuntu \
     --initialization-actions gs://${BUCKET_NAME}/dask/dask.sh \
     --metadata dask-runtime=yarn \

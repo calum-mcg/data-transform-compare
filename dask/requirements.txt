@@ -1,0 +1,5 @@
+dask[distributed]==2022.6.1
+dask-yarn==0.9
+gcsfs==2022.5.0
+python-dotenv==0.20.0
+pandas==1.4.3

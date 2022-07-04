@@ -1,5 +1,8 @@
 
 ## Overview
+The aim of this project is to compare the time it takes to extract, transform and load large datasets using three different methods.
+Please read the [Medium post](https://medium.com/@cjmcguicken/working-with-large-datasets-bigquery-with-dbt-vs-spark-vs-dask-92e596ce8e06) for more information.
+
 ## Data
 The data used in this project is the publicly available [Stack Exchange Data Dump](https://archive.org/details/stackexchange). `Users.xml` and `Posts.xml` were converted to `users.csv.gz` and `posts.csv.gz` and used as the source files for this project.
 

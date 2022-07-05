@@ -13,7 +13,7 @@ For Google Cloud:
 - Create a project
 - Create a Cloud Storage Bucket and upload `posts.csv.gz`, `users.csv.gz` and `country_codes.csv` files 
 
-For Scala:
+For Spark:
 - [Install sbt](https://www.scala-sbt.org/1.x/docs/Setup.html)
 - Install [SDKMAN!](https://sdkman.io/)
 - In the `spark` folder, use SDKMAN! to install JDK (8 or 11 currently supported) and set JDK version of the project using `sdk env init`

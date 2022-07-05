@@ -79,7 +79,7 @@ package
 
 3. Copy the `jar` from local to GCS (optional):
 ```
-gsutil cp spark/target/scala-2.12/${JAR_FILENAME}.jar gs://example-big-data-bucket/spark/aggregateusers.jar
+gsutil cp spark/target/scala-2.12/${JAR_FILENAME}.jar gs://${BUCKET_NAME}/spark/aggregateusers.jar
 ```
 
 4. Create Dataproc cluster:
